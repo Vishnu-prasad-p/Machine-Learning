@@ -1,0 +1,88 @@
+net
+{
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@3b82ade8";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@45800e35";
+	node_size = (130 55);
+}
+
+node variable3
+{
+	states = ("s0" "s1" );
+	position = (463 -187);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable3";
+	label = "SAT";
+	excludepolicy = "include whole CPT";
+}
+node variable2
+{
+	states = ("g3" "g0" "g1" );
+	position = (295 -186);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable2";
+	label = "Grade";
+	excludepolicy = "include whole CPT";
+}
+node variable1
+{
+	states = ("i0" "i1" );
+	position = (381 -106);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "Intelligence";
+	excludepolicy = "include whole CPT";
+}
+node variable0
+{
+	states = ("d0" "d1" );
+	position = (218 -108);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "Difficulty";
+	excludepolicy = "include whole CPT";
+}
+node variable4
+{
+	states = ("l0" "l1" );
+	position = (296 -278);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable4";
+	label = "letter";
+	excludepolicy = "include whole CPT";
+}
+potential ( variable3 | variable1 )
+{
+	data = ((	0.95	0.05	)
+		(	0.2	0.8	));
+}
+potential ( variable2 | variable0 variable1 )
+{
+	data = (((	0.3	0.3	0.4	)
+		(	0.02	0.9	0.08	))
+		((	0.7	0.05	0.25	)
+		(	0.2	0.5	0.3	)));
+}
+potential ( variable1 | )
+{
+	data = (	0.7	0.3	);
+}
+potential ( variable0 | )
+{
+	data = (	0.6	0.4	);
+}
+potential ( variable4 | variable2 )
+{
+	data = ((	0.99	0.01	)
+		(	0.1	0.9	)
+		(	0.4	0.6	));
+}

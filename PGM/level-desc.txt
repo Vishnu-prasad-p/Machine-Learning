@@ -1,0 +1,18 @@
+You are an explorer trying to search for the hidden treasure of the great Pharaons. While digging for treasure in the desert, you find an antique site with a wooden door. Game Start. You can open the wooden door or continue digging.
+
+List of rooms and objects:
+Desert: a wooden door, some stairs below the wooden door.
+Room-A: a wooden door, an orange door on the right, a hallway, a ladder going down.
+Room-B: a dusty throne in the middle, a green door on the right, a hallway.
+Basement: a giant spider, an orange door, a green door.
+Room-C: stairs, a ladder going up, a black door on the right.
+Room-D: a lake full of boiling lava, a black door.
+
+Level interactions:
+Desert: You can open the wooden door to find Room-A. You can continue digging to find the stairs below the wooden door.
+Room-A: You can open the orange door to find Basement. You can go down the hallway to find Room-B. You can climb down the ladder to find Room-C.
+Room-B: You can sit in the dusty throne. You can open the green door to find Basement. You can walk back the hallway to return to Room-A.
+Basement: You can open the orange door to return to Room-A. You can open the green door to return to Room-B.
+Room-C: You can climb up the ladder to find Room-A. You can open the black door to find Room-D.
+Room-D: You can open the black door to return to Room-C.
+Winning: When you sit in the dusty throne, the treasure falls from the ceiling. You win!
